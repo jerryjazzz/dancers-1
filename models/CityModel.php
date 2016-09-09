@@ -28,8 +28,8 @@ class CityModel extends Db
     }
     function add()
     {
-        $sql = "INSERT INTO `sgostu_city`(city_name,city_name_en,city_name_ua,city_onreglist) VALUES(?,?,?,1)";
-        $this->sql($sql, array("sss",$_POST['city_name'],$_POST['city_name_en'],$_POST['city_name_ua']));
+        $sql = "INSERT INTO `sgostu_city`(city_name,city_name_en,city_name_ua,city_onreglist,country_code) VALUES(?,?,?,1,?)";
+        $this->sql($sql, array("ssss",$_POST['city_name'],$_POST['city_name_en'],$_POST['city_name_ua'],$_GET['country']));
     }
     function del()
     {

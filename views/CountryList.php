@@ -44,6 +44,15 @@ head();
                 </form>
                 <ul class="pagination">
                     <?php
+                    if($_GET['page'] > 4){
+                        ?>
+                        <li>
+                            <a href="<?= $config->BASE_URL ?>/country/views/page/1">1</a>
+                        </li>
+                        <?
+                    }
+                    ?>
+                    <?php
                     if ($_GET['page'] < 3)
                         $s = 1;
                     elseif ($_GET['page'] > $pages - 3 && $pages - 3 > 0)
@@ -58,6 +67,15 @@ head();
                         </li>
                         <?
                         $i++;
+                    }
+                    ?>
+                    <?php
+                    if($_GET['page'] < $pages-3 && $pages > 5){
+                        ?>
+                        <li>
+                            <a href="<?= $config->BASE_URL ?>/country/views/page/<?=$pages?>"><?=$pages?></a>
+                        </li>
+                        <?
                     }
                     ?>
                 </ul>

@@ -39,6 +39,15 @@ head();
                 </form>
                 <ul class="pagination">
                     <?php
+                        if($_GET['page'] > 4){
+                            ?>
+                            <li>
+                                <a href="<?= $config->BASE_URL ?>/city/views/country/<?=$_GET['country']?>/page/1">1</a>
+                            </li>
+                            <?
+                        }
+                    ?>
+                    <?php
                     if ($_GET['page'] < 3)
                         $s = 1;
                     elseif ($_GET['page'] > $pages - 3 && $pages - 3 > 0)
@@ -49,14 +58,23 @@ head();
                     while ($i < $s + 5 and $i <= $pages) {
                         ?>
                         <li class="<?php if ($_GET['page'] == $i) echo "active" ?>">
-                            <a href="<?= $config->BASE_URL ?>/city/views/page/<?= $i ?>"><?= $i ?></a>
+                            <a href="<?= $config->BASE_URL ?>/city/views/country/<?=$_GET['country']?>/page/<?= $i ?>"><?= $i ?></a>
                         </li>
                         <?
                         $i++;
                     }
                     ?>
+                    <?php
+                    if($_GET['page'] < $pages-3 && $pages > 5){
+                        ?>
+                        <li>
+                            <a href="<?= $config->BASE_URL ?>/city/views/country/<?=$_GET['country']?>/page/<?=$pages?>"><?=$pages?></a>
+                        </li>
+                        <?
+                    }
+                    ?>
                 </ul>
-                <a href="/city/create" class="add btn btn-success">Создать</a>
+                <a href="/city/create/country/<?=$_GET['country']?>" class="add btn btn-success">Создать</a>
             </div>
         </div>
     </div>

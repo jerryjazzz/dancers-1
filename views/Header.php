@@ -21,6 +21,7 @@
     <div class="container">
         <ul>
             <li><a href="/">Главная</a></li>
+            <li><a href="/dancers/views/">Танцоры</a></li>
             <li>
                 <a href="#">Настройки</a>
                 <ul>

@@ -26,10 +26,16 @@ class CountryModel extends Db
         $sql = "UPDATE `sgostu_country` SET country_name = ?,country_name_en = ?,country_name_ua = ? WHERE `country_code` = ?";
         $this->sql($sql, array("sssi",$_POST['country_name'],$_POST['country_name_en'],$_POST['country_name_ua'],$_GET['id']));
     }
+    function img($id)
+    {
+        $sql = "UPDATE `sgostu_country` SET country_flag = ? WHERE `country_code` = ?";
+        $this->sql($sql, array("si",$_POST['country_flag'],$id));
+    }
     function add()
     {
         $sql = "INSERT INTO `sgostu_country`(country_name,country_name_en,country_name_ua) VALUES(?,?,?)";
         $this->sql($sql, array("sss",$_POST['country_name'],$_POST['country_name_en'],$_POST['country_name_ua']));
+        return $this->last_id();
     }
     function del()
     {

@@ -40,7 +40,7 @@
 			return $result ;
 		}
 		public function last_id(){
-			$this->connection->insert_id;
+			return $this->connection->insert_id;
 		}
 		public function toRow($res){
 			$row = $res->fetch_assoc();

@@ -32,6 +32,15 @@ class Routs
                             'create' => "create",
                         ]
                 ],
+                'dancers' => [
+                    'controller' => 'DancersController',
+                    'actions' =>
+                        [
+                            'views' => "index",
+                            'edit' => "edit",
+                            'create' => "create",
+                        ]
+                ],
                 '' => [
                     'controller' => 'HomeController',
                     'actions' =>

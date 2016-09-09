@@ -8,19 +8,15 @@ head();
                 <form method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="name1">Имя:</label>
-                        <input type="text" class="form-control" name="country_name" id="name1" value="<?=$_POST['country_name']?>">
+                        <input type="text" class="form-control" name="city_name" id="name1" value="<?=$_POST['city_name']?>">
                     </div>
                     <div class="form-group">
                         <label for="name2">Название ENG:</label>
-                        <input type="text" class="form-control" name="country_name_en" id="name2" value="<?=$_POST['country_name_en']?>">
+                        <input type="text" class="form-control" name="city_name_en" id="name2" value="<?=$_POST['city_name_en']?>">
                     </div>
                     <div class="form-group">
                         <label for="name3">Название UA:</label>
-                        <input type="text" class="form-control" name="country_name_ua" id="name3" value="<?=$_POST['country_name_ua']?>">
-                    </div>
-                    <div class="form-group">
-                        <label for="name4">Флаг:</label>
-                        <input type="file" class="form-control" name="country_flag" id="name4" value="<?=$_POST['country_flag']?>">
+                        <input type="text" class="form-control" name="city_name_ua" id="name3" value="<?=$_POST['city_name_ua']?>">
                     </div>
                     <button type="submit" name="add" class="btn btn-default">Добавить</button>
                 </form>
