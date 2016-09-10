@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/views/PairsCreate.php" line="33" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="dea04634-1b33-42fb-a028-78834cbe5610" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/CityController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/CityModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/CountryModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/CityList.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/CountryCreate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/CountryEdit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/CountryList.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/Lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/LangController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lang/en.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lang/ru.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/LangModel.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/PairsCoachController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/PairsController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/PairsCoachModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/PairsModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/DancersCreate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/DancersEdit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/DancersList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/PairsCoachCreate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/PairsCoachList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/PairsCreate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/PairsList.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/Config.php" afterPath="$PROJECT_DIR$/config/Config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/Routs.php" afterPath="$PROJECT_DIR$/config/Routs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/Url.php" afterPath="$PROJECT_DIR$/config/Url.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/Error404Controller.php" afterPath="$PROJECT_DIR$/controllers/Error404Controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/DancersController.php" afterPath="$PROJECT_DIR$/controllers/DancersController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/Func.php" afterPath="$PROJECT_DIR$/controllers/Func.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/css.css" afterPath="$PROJECT_DIR$/css/css.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/HomeModel.php" afterPath="$PROJECT_DIR$/models/HomeModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/DancersModel.php" afterPath="$PROJECT_DIR$/models/DancersModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/CityCreate.php" afterPath="$PROJECT_DIR$/views/CityCreate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/CityEdit.php" afterPath="$PROJECT_DIR$/views/CityEdit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/CountryCreate.php" afterPath="$PROJECT_DIR$/views/CountryCreate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Footer.php" afterPath="$PROJECT_DIR$/views/Footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Header.php" afterPath="$PROJECT_DIR$/views/Header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Home.php" afterPath="$PROJECT_DIR$/views/Home.php" />
     </list>
     <ignored path="namespaces.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,18 +43,138 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - dancers@127.0.0.1" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - dancers@127.0.0.1" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="sgostu_dancer" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="namespaces" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CountryCreate.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/CountryCreate.php">
+      <file leaf-file-name="PairsCoachController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/PairsCoachController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="85" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
+            <state relative-caret-position="544">
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PairsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/PairsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+              <folding>
+                <element signature="e#30#52#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PairsCoachList.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/PairsCoachList.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1700">
+              <caret line="100" column="63" selection-start-line="100" selection-start-column="63" selection-end-line="100" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PairsCoachCreate.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/PairsCoachCreate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PairsCreate.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/PairsCreate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="108" selection-start-line="29" selection-start-column="108" selection-end-line="29" selection-end-column="108" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PairsModel.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/PairsModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+              <folding>
+                <marker date="1473511561446" expanded="true" signature="118:215" placeholder="SELECT * FRO... sgostu_pair" />
+                <marker date="1473511561446" expanded="true" signature="425:499" placeholder="SELECT * FRO... sgostu_pair" />
+                <marker date="1473511561446" expanded="true" signature="677:726" placeholder="SELECT * FRO... sgostu_pair" />
+                <marker date="1473511561446" expanded="true" signature="875:923" placeholder="SELECT * FRO... sgostu_club" />
+                <marker date="1473511561446" expanded="true" signature="1057:1106" placeholder="SELECT * FRO... sgostu_club" />
+                <marker date="1473511561446" expanded="true" signature="1247:1297" placeholder="SELECT * FRO... sgostu_class" />
+                <marker date="1473511561446" expanded="true" signature="1428:1482" placeholder="SELECT * FRO... sgostu_country" />
+                <marker date="1473511561446" expanded="true" signature="1618:1671" placeholder="SELECT * FRO... sgostu_class" />
+                <marker date="1473511561446" expanded="true" signature="1819:1871" placeholder="SELECT * FRO... sgostu_dancer" />
+                <marker date="1473511561446" expanded="true" signature="2045:2130" placeholder="UPDATE `sgos... " />
+                <marker date="1473511561446" expanded="true" signature="2171:2255" placeholder="UPDATE `sgos... " />
+                <marker date="1473511561446" expanded="true" signature="2370:2475" placeholder="INSERT INTO `sgostu_pair`... " />
+                <marker date="1473511561446" expanded="true" signature="2653:2701" placeholder="DELETE FROM " />
+                <marker date="1473511561446" expanded="true" signature="2676:2701" placeholder="DELETE FROM " />
+                <marker date="1473511561446" expanded="true" signature="2689:2701" placeholder="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PairsCoachModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/PairsCoachModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="586">
+              <caret line="48" column="149" selection-start-line="48" selection-start-column="149" selection-end-line="48" selection-end-column="149" />
+              <folding>
+                <marker date="1473511434814" expanded="true" signature="128:214" placeholder="SELECT * FRO... sgostu_pair_coach" />
+                <marker date="1473511434814" expanded="true" signature="409:472" placeholder="SELECT pair_... sgostu_pair_coach" />
+                <marker date="1473511434814" expanded="true" signature="635:690" placeholder="SELECT * FRO... sgostu_pair_coach" />
+                <marker date="1473511434814" expanded="true" signature="839:867" placeholder="SELECT * FRO... sgostu_coach" />
+                <marker date="1473511434814" expanded="true" signature="1001:1052" placeholder="SELECT * FRO... sgostu_coach" />
+                <marker date="1473511434814" expanded="true" signature="1195:1264" placeholder="UPDATE `sgos... " />
+                <marker date="1473511434814" expanded="true" signature="1367:1503" placeholder="INSERT INTO `sgostu_pair_coach`... " />
+                <marker date="1473511434814" expanded="true" signature="1660:1719" placeholder="DELETE FROM " />
+                <marker date="1473511434814" expanded="true" signature="1690:1719" placeholder="DELETE FROM " />
+                <marker date="1473511434814" expanded="true" signature="1709:1719" placeholder="DELETE FROM " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,12 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/module/Killer.php" />
-        <option value="$PROJECT_DIR$/module/Killer2.php" />
-        <option value="$PROJECT_DIR$/config/class.php" />
-        <option value="$PROJECT_DIR$/contr/func.php" />
-        <option value="$PROJECT_DIR$/controller/Error404Controller.php" />
-        <option value="$PROJECT_DIR$/config/lang.php" />
         <option value="$PROJECT_DIR$/config/db.php" />
         <option value="$PROJECT_DIR$/models/LangModel.php" />
         <option value="$PROJECT_DIR$/controllers/LangController.php" />
@@ -77,9 +194,7 @@
         <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/config/modules.php" />
         <option value="$PROJECT_DIR$/config/Modules.php" />
-        <option value="$PROJECT_DIR$/config/Db.php" />
         <option value="$PROJECT_DIR$/views/View.php" />
-        <option value="$PROJECT_DIR$/views/Footer.php" />
         <option value="$PROJECT_DIR$/views/Error404.php" />
         <option value="$PROJECT_DIR$/prototypes/Controllers.php" />
         <option value="$PROJECT_DIR$/controllers/HomeController.php" />
@@ -87,23 +202,42 @@
         <option value="$PROJECT_DIR$/lang/en.php" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/config/Config.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/models/HomeModel.php" />
         <option value="$PROJECT_DIR$/config/Url.php" />
-        <option value="$PROJECT_DIR$/views/Header.php" />
-        <option value="$PROJECT_DIR$/controllers/Func.php" />
         <option value="$PROJECT_DIR$/views/Home.php" />
         <option value="$PROJECT_DIR$/views/CountryEdit.php" />
         <option value="$PROJECT_DIR$/controllers/Error404Controller.php" />
-        <option value="$PROJECT_DIR$/css/css.css" />
-        <option value="$PROJECT_DIR$/views/CountryCreate.php" />
+        <option value="$PROJECT_DIR$/config/Db.php" />
         <option value="$PROJECT_DIR$/models/CountryModel.php" />
-        <option value="$PROJECT_DIR$/views/CountryList.php" />
-        <option value="$PROJECT_DIR$/config/Routs.php" />
-        <option value="$PROJECT_DIR$/controllers/CityController.php" />
         <option value="$PROJECT_DIR$/controllers/CountryController.php" />
-        <option value="$PROJECT_DIR$/views/CityList.php" />
         <option value="$PROJECT_DIR$/models/CityModel.php" />
+        <option value="$PROJECT_DIR$/controllers/CityController.php" />
+        <option value="$PROJECT_DIR$/views/CityList.php" />
+        <option value="$PROJECT_DIR$/views/CountryList.php" />
+        <option value="$PROJECT_DIR$/views/CityEdit.php" />
+        <option value="$PROJECT_DIR$/views/CityCreate.php" />
+        <option value="$PROJECT_DIR$/views/CountryCreate.php" />
+        <option value="$PROJECT_DIR$/controllers/Func.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/54eedfa4-761e-4072-b6ec-e2ff37382416/console.sql" />
+        <option value="$PROJECT_DIR$/controllers/DancersController.php" />
+        <option value="$PROJECT_DIR$/views/DancersCreate.php" />
+        <option value="$PROJECT_DIR$/views/DancersEdit.php" />
+        <option value="$PROJECT_DIR$/views/PairList.php" />
+        <option value="$PROJECT_DIR$/views/Footer.php" />
+        <option value="$PROJECT_DIR$/views/Header.php" />
+        <option value="$PROJECT_DIR$/css/css.css" />
+        <option value="$PROJECT_DIR$/models/DancersModel.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/views/DancersList.php" />
+        <option value="$PROJECT_DIR$/views/PairsList.php" />
+        <option value="$PROJECT_DIR$/config/Routs.php" />
+        <option value="$PROJECT_DIR$/views/PairsCoachList.php" />
+        <option value="$PROJECT_DIR$/controllers/PairsController.php" />
+        <option value="$PROJECT_DIR$/controllers/PairsCoachController.php" />
+        <option value="$PROJECT_DIR$/models/PairsCoachModel.php" />
+        <option value="$PROJECT_DIR$/views/PairsCoachCreate.php" />
+        <option value="$PROJECT_DIR$/views/PairsCreate.php" />
+        <option value="$PROJECT_DIR$/models/PairsModel.php" />
       </list>
     </option>
   </component>
@@ -176,7 +310,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -188,6 +322,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -243,34 +378,34 @@
       <option name="presentableId" value="Default" />
       <updated>1473259202982</updated>
       <workItem from="1473259204160" duration="9349000" />
-      <workItem from="1473336609682" duration="10446000" />
+      <workItem from="1473336609682" duration="46113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19795000" />
+    <option name="totallyTimeSpent" value="55462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2497309" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10710441" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13562971" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -284,16 +419,14 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module/Killer2.php" />
-    <entry file="file://$PROJECT_DIR$/module/Killer.php" />
-    <entry file="file://$PROJECT_DIR$/contr/func.php" />
-    <entry file="file://$PROJECT_DIR$/contr/clang.php" />
-    <entry file="file://$PROJECT_DIR$/contr/cerror404.php" />
     <entry file="file://$PROJECT_DIR$/controller/Error404Controller.php" />
     <entry file="file://$PROJECT_DIR$/config/Class.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -310,22 +443,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/Db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/View.php" />
-    <entry file="file://$PROJECT_DIR$/views/Footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/LangController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -348,16 +466,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding>
-            <element signature="e#29#50#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -399,14 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/HomeModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -418,29 +518,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/Header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/Config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/Func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding>
-            <marker date="1473340856414" expanded="true" signature="2152:2189" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -460,48 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/CountryEdit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="898">
-          <caret line="124" column="17" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/CountryModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
-          <folding>
-            <marker date="1473345218140" expanded="true" signature="120:184" placeholder="SELECT * FRO... sgostu_country" />
-            <marker date="1473345218140" expanded="true" signature="353:396" placeholder="SELECT `coun... sgostu_country" />
-            <marker date="1473345218140" expanded="true" signature="531:586" placeholder="SELECT * FRO... sgostu_country" />
-            <marker date="1473345218140" expanded="true" signature="731:840" placeholder="UPDATE `sgos... " />
-            <marker date="1473345218140" expanded="true" signature="737:840" placeholder="SELECT * FRO... sgostu_country" />
-            <marker date="1473345218140" expanded="true" signature="1018:1106" placeholder="INSERT INTO `sgostu_country`... " />
-            <marker date="1473345218140" expanded="true" signature="1029:1091" placeholder="UPDATE `sgos... " />
-            <marker date="1473345218140" expanded="true" signature="1271:1324" placeholder="DELETE FROM " />
-            <marker date="1473345218140" expanded="true" signature="1282:1324" placeholder="UPDATE `sgos... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/CountryList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/Url.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -510,64 +550,345 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/Routs.php">
+    <entry file="file://$PROJECT_DIR$/views/CountryEdit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        <state relative-caret-position="272">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/CityController.php">
+    <entry file="file://$PROJECT_DIR$/config/Db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="47" column="37" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="37" />
-          <folding>
-            <element signature="e#30#51#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/CityList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        <state relative-caret-position="612">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/CountryController.php">
+    <entry file="file://$PROJECT_DIR$/models/CountryModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        <state relative-caret-position="527">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
           <folding>
-            <element signature="e#30#54#0#PHP" expanded="true" />
+            <marker date="1473405745201" expanded="true" signature="120:184" placeholder="SELECT * FRO... sgostu_country" />
+            <marker date="1473405745201" expanded="true" signature="353:396" placeholder="SELECT `coun... sgostu_country" />
+            <marker date="1473405745201" expanded="true" signature="531:586" placeholder="SELECT * FRO... sgostu_country" />
+            <marker date="1473405745201" expanded="true" signature="731:840" placeholder="UPDATE `sgos... " />
+            <marker date="1473405745201" expanded="true" signature="737:840" placeholder="SELECT * FRO... sgostu_country" />
+            <marker date="1473405745201" expanded="true" signature="1021:1090" placeholder="UPDATE `sgos... " />
+            <marker date="1473405745201" expanded="true" signature="1206:1294" placeholder="INSERT INTO `sgostu_country`... " />
+            <marker date="1473405745201" expanded="true" signature="1217:1279" placeholder="UPDATE `sgos... " />
+            <marker date="1473405745201" expanded="true" signature="1492:1545" placeholder="DELETE FROM " />
+            <marker date="1473405745201" expanded="true" signature="1503:1545" placeholder="UPDATE `sgos... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/CityModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="92" selection-start-line="30" selection-start-column="92" selection-end-line="30" selection-end-column="92" />
+        <state relative-caret-position="187">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="12" selection-end-column="5" />
           <folding>
-            <marker date="1473402865585" expanded="true" signature="114:197" placeholder="SELECT * FRO... sgostu_city" />
-            <marker date="1473402865585" expanded="true" signature="381:418" placeholder="SELECT `city... sgostu_city" />
-            <marker date="1473402865585" expanded="true" signature="381:443" placeholder="SELECT `city... sgostu_city" />
-            <marker date="1473402865585" expanded="true" signature="601:650" placeholder="SELECT * FRO... sgostu_city" />
-            <marker date="1473402865585" expanded="true" signature="795:889" placeholder="UPDATE `sgos... " />
-            <marker date="1473402865585" expanded="true" signature="1058:1151" placeholder="INSERT INTO `sgostu_city`... " />
-            <marker date="1473402865585" expanded="true" signature="1307:1354" placeholder="DELETE FROM " />
-            <marker date="1473402865585" expanded="true" signature="1343:1354" placeholder="DELETE FROM " />
+            <marker date="1473406221050" expanded="true" signature="114:197" placeholder="SELECT * FRO... sgostu_city" />
+            <marker date="1473406221050" expanded="true" signature="381:418" placeholder="SELECT `city... sgostu_city" />
+            <marker date="1473406221050" expanded="true" signature="381:443" placeholder="SELECT `city... sgostu_city" />
+            <marker date="1473406221050" expanded="true" signature="601:650" placeholder="SELECT * FRO... sgostu_city" />
+            <marker date="1473406221050" expanded="true" signature="795:889" placeholder="UPDATE `sgos... " />
+            <marker date="1473406221050" expanded="true" signature="1058:1166" placeholder="INSERT INTO `sgostu_city`... " />
+            <marker date="1473406221050" expanded="true" signature="1340:1387" placeholder="DELETE FROM " />
+            <marker date="1473406221050" expanded="true" signature="1376:1387" placeholder="DELETE FROM " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/CountryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+          <folding>
+            <element signature="e#30#54#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/CityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/CityList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="70" column="108" selection-start-line="70" selection-start-column="108" selection-end-line="70" selection-end-column="136" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/CountryList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="796">
+          <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/CountryCreate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="85" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
+        <state relative-caret-position="102">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <element signature="e#29#50#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/54eedfa4-761e-4072-b6ec-e2ff37382416/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/aaa5c4a/54eedfa4-761e-4072-b6ec-e2ff37382416/dancers.sgostu_coachcat">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/Func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <marker date="1473410476923" expanded="true" signature="2186:2223" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/DancersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/DancersCreate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="82" column="62" selection-start-line="82" selection-start-column="62" selection-end-line="82" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/DancersEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="81" column="56" selection-start-line="81" selection-start-column="56" selection-end-line="81" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="121" selection-start-line="11" selection-start-column="121" selection-end-line="11" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/CityEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/DancersModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
+          <folding>
+            <marker date="1473494949028" expanded="true" signature="230:530" placeholder="SELECT dance... sgostu_dancer" />
+            <marker date="1473494949028" expanded="true" signature="737:1015" placeholder="SELECT dance... sgostu_dancer" />
+            <marker date="1473494949028" expanded="true" signature="1214:1431" placeholder="SELECT dance... sgostu_dancer" />
+            <marker date="1473494949028" expanded="true" signature="1729:1853" placeholder="SELECT dance... sgostu_dancer" />
+            <marker date="1473494949028" expanded="true" signature="2028:2130" placeholder="SELECT dance... sgostu_dancer" />
+            <marker date="1473494949028" expanded="true" signature="2297:2339" placeholder="SELECT dance... sgostu_dancer" />
+            <marker date="1473494949028" expanded="true" signature="2489:2542" placeholder="SELECT * FRO... sgostu_dancer" />
+            <marker date="1473494949028" expanded="true" signature="2691:2739" placeholder="SELECT * FRO... sgostu_club" />
+            <marker date="1473494949028" expanded="true" signature="2868:2918" placeholder="SELECT * FRO... sgostu_class" />
+            <marker date="1473494949028" expanded="true" signature="3049:3103" placeholder="SELECT * FRO... sgostu_country" />
+            <marker date="1473494949028" expanded="true" signature="3238:3289" placeholder="SELECT * FRO... sgostu_class" />
+            <marker date="1473494949028" expanded="true" signature="3428:3824" placeholder="UPDATE `sgos... " />
+            <marker date="1473494949028" expanded="true" signature="4321:4711" placeholder="INSERT INTO `sgostu_dancer`... " />
+            <marker date="1473494949028" expanded="true" signature="5241:5293" placeholder="DELETE FROM " />
+            <marker date="1473494949028" expanded="true" signature="5283:5293" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/CityCreate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="9" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/DancersList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
+          <folding>
+            <marker date="1473500431802" expanded="true" signature="2223:2317" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/PairsList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="52" column="83" selection-start-line="52" selection-start-column="83" selection-end-line="52" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/Routs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/PairsCoachList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="100" column="63" selection-start-line="100" selection-start-column="63" selection-end-line="100" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/PairsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+          <folding>
+            <element signature="e#30#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/PairsCoachController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/PairsCoachCreate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/PairsCreate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="108" selection-start-line="29" selection-start-column="108" selection-end-line="29" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/PairsCoachModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="48" column="149" selection-start-line="48" selection-start-column="149" selection-end-line="48" selection-end-column="149" />
+          <folding>
+            <marker date="1473511434814" expanded="true" signature="128:214" placeholder="SELECT * FRO... sgostu_pair_coach" />
+            <marker date="1473511434814" expanded="true" signature="409:472" placeholder="SELECT pair_... sgostu_pair_coach" />
+            <marker date="1473511434814" expanded="true" signature="635:690" placeholder="SELECT * FRO... sgostu_pair_coach" />
+            <marker date="1473511434814" expanded="true" signature="839:867" placeholder="SELECT * FRO... sgostu_coach" />
+            <marker date="1473511434814" expanded="true" signature="1001:1052" placeholder="SELECT * FRO... sgostu_coach" />
+            <marker date="1473511434814" expanded="true" signature="1195:1264" placeholder="UPDATE `sgos... " />
+            <marker date="1473511434814" expanded="true" signature="1367:1503" placeholder="INSERT INTO `sgostu_pair_coach`... " />
+            <marker date="1473511434814" expanded="true" signature="1660:1719" placeholder="DELETE FROM " />
+            <marker date="1473511434814" expanded="true" signature="1690:1719" placeholder="DELETE FROM " />
+            <marker date="1473511434814" expanded="true" signature="1709:1719" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/PairsModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+          <folding>
+            <marker date="1473511561446" expanded="true" signature="118:215" placeholder="SELECT * FRO... sgostu_pair" />
+            <marker date="1473511561446" expanded="true" signature="425:499" placeholder="SELECT * FRO... sgostu_pair" />
+            <marker date="1473511561446" expanded="true" signature="677:726" placeholder="SELECT * FRO... sgostu_pair" />
+            <marker date="1473511561446" expanded="true" signature="875:923" placeholder="SELECT * FRO... sgostu_club" />
+            <marker date="1473511561446" expanded="true" signature="1057:1106" placeholder="SELECT * FRO... sgostu_club" />
+            <marker date="1473511561446" expanded="true" signature="1247:1297" placeholder="SELECT * FRO... sgostu_class" />
+            <marker date="1473511561446" expanded="true" signature="1428:1482" placeholder="SELECT * FRO... sgostu_country" />
+            <marker date="1473511561446" expanded="true" signature="1618:1671" placeholder="SELECT * FRO... sgostu_class" />
+            <marker date="1473511561446" expanded="true" signature="1819:1871" placeholder="SELECT * FRO... sgostu_dancer" />
+            <marker date="1473511561446" expanded="true" signature="2045:2130" placeholder="UPDATE `sgos... " />
+            <marker date="1473511561446" expanded="true" signature="2171:2255" placeholder="UPDATE `sgos... " />
+            <marker date="1473511561446" expanded="true" signature="2370:2475" placeholder="INSERT INTO `sgostu_pair`... " />
+            <marker date="1473511561446" expanded="true" signature="2653:2701" placeholder="DELETE FROM " />
+            <marker date="1473511561446" expanded="true" signature="2676:2701" placeholder="DELETE FROM " />
+            <marker date="1473511561446" expanded="true" signature="2689:2701" placeholder="DELETE FROM " />
+          </folding>
         </state>
       </provider>
     </entry>

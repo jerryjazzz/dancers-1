@@ -1,0 +1,1580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - dancers@127.0.0.1" uuid="54eedfa4-761e-4072-b6ec-e2ff37382416">
+    <database-info product="MySQL" version="5.7.13" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="dancers"/>
+      <table id="2" parent="1" name="migration"/>
+      <table id="3" parent="1" name="sgostu_billrequest"/>
+      <table id="4" parent="1" name="sgostu_bills"/>
+      <table id="5" parent="1" name="sgostu_cashpaidrequest"/>
+      <table id="6" parent="1" name="sgostu_category"/>
+      <table id="7" parent="1" name="sgostu_city"/>
+      <table id="8" parent="1" name="sgostu_class"/>
+      <table id="9" parent="1" name="sgostu_club"/>
+      <table id="10" parent="1" name="sgostu_coach"/>
+      <table id="11" parent="1" name="sgostu_coachcat"/>
+      <table id="12" parent="1" name="sgostu_country"/>
+      <table id="13" parent="1" name="sgostu_dancer"/>
+      <table id="14" parent="1" name="sgostu_dancerpayments"/>
+      <table id="15" parent="1" name="sgostu_lng"/>
+      <table id="16" parent="1" name="sgostu_pair"/>
+      <table id="17" parent="1" name="sgostu_pair_coach"/>
+      <table id="18" parent="1" name="sgostu_program"/>
+      <table id="19" parent="1" name="sgostu_tournamentprog"/>
+      <table id="20" parent="1" name="sgostu_tournamentrequest"/>
+      <table id="21" parent="1" name="sgostu_tournaments"/>
+      <table id="22" parent="1" name="sgostu_tours"/>
+      <table id="23" parent="1" name="user"/>
+      <column id="24" parent="2" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(180)</data-type>
+      </column>
+      <column id="25" parent="2" name="apply_time">
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="26" parent="2" name="PRIMARY">
+        <columns>version</columns>
+        <primary>1</primary>
+      </key>
+      <column id="27" parent="3" name="bp_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="28" parent="3" name="bill_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="29" parent="3" name="request_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="30" parent="3" name="bp_amount">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="31" parent="3" name="bill_code">
+        <columns>bp_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <column id="32" parent="4" name="bill_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="33" parent="4" name="bill_buhcode">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="34" parent="4" name="bill_date">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="35" parent="4" name="payer_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="36" parent="4" name="payer_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="37" parent="4" name="bill_amount">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="38" parent="4" name="bill_desc">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="39" parent="4" name="bill_paid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="40" parent="4" name="transaction_id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="41" parent="4" name="payer_phone">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="42" parent="4" name="pay_date">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="43" parent="4" name="bill_comission">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="44" parent="4" name="cashier_code">
+        <comment>код кассира</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="45" parent="4" name="bill_profit">
+        <comment>приход (0) / возврат (1)</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="46" parent="4" name="bill_accept">
+        <comment>подтверждение оплаты</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="47" parent="4" name="merchant_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="48" parent="4" name="bill_pairnum">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="49" parent="4" name="bill_code">
+        <columns>bill_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="50" parent="4" name="bill_code_2">
+        <columns>bill_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <column id="51" parent="5" name="request_code">
+        <mandatory>1</mandatory>
+        <data-type>bigint(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="52" parent="5" name="tournament_code">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="53" parent="5" name="tournamentprog_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="54" parent="5" name="pair_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="55" parent="5" name="request_active">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="56" parent="5" name="request_num">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="57" parent="5" name="request_hide">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="58" parent="5" name="request_resplace">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="59" parent="5" name="request_endtour">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="60" parent="5" name="request_payed">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="61" parent="5" name="man_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="62" parent="5" name="woman_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="63" parent="5" name="pair_code">
+        <columns>pair_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="64" parent="5" name="tournamentprog_code">
+        <columns>tournamentprog_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="65" parent="5" name="tournament_code">
+        <columns>tournament_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="66" parent="5" name="PRIMARY">
+        <columns>request_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="67" parent="6" name="category_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="68" parent="6" name="category_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="69" parent="6" name="category_name_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="70" parent="6" name="category_name_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="71" parent="6" name="category_minage">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="72" parent="6" name="category_maxage">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="73" parent="6" name="category_pos">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="74" parent="6" name="category_solo">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="75" parent="6" name="category_tested">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <index id="76" parent="6" name="category_name">
+        <columns>category_name</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="77" parent="6" name="category_name_en">
+        <columns>category_name_en</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="78" parent="6" name="category_name_ua">
+        <columns>category_name_ua</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="79" parent="6" name="PRIMARY">
+        <columns>category_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="80" parent="7" name="city_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="81" parent="7" name="city_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="82" parent="7" name="city_name_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="83" parent="7" name="city_name_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+      </column>
+      <column id="84" parent="7" name="country_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="85" parent="7" name="city_onreglist">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="86" parent="7" name="city_name">
+        <columns>city_name</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="87" parent="7" name="city_name_en">
+        <columns>city_name_en</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="88" parent="7" name="city_name_ua">
+        <columns>city_name_ua</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="89" parent="7" name="country_code">
+        <columns>country_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="90" parent="7" name="PRIMARY">
+        <columns>city_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="91" parent="8" name="class_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="92" parent="8" name="class_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="93" parent="8" name="class_name_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="94" parent="8" name="class_name_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="95" parent="8" name="class_num">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="96" parent="8" name="class_add1">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="97" parent="8" name="class_add2">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="98" parent="8" name="class_pos">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="99" parent="8" name="class_regpos">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="100" parent="8" name="class_letter">
+        <mandatory>1</mandatory>
+        <data-type>varchar(5)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="101" parent="8" name="class_letter_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+      </column>
+      <column id="102" parent="8" name="class_letter_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="103" parent="8" name="class_outsum">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="104" parent="8" name="class_rang_cl">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="105" parent="8" name="class_rang_op">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="106" parent="8" name="class_rang_in">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="107" parent="8" name="class_rang_ch">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="108" parent="8" name="PRIMARY">
+        <columns>class_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="109" parent="9" name="club_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="110" parent="9" name="club_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="111" parent="9" name="club_boss">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="112" parent="9" name="club_name_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="113" parent="9" name="club_boss_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="114" parent="9" name="club_name_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="115" parent="9" name="club_boss_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="116" parent="9" name="club_index">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="117" parent="9" name="club_street">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="118" parent="9" name="club_street_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="119" parent="9" name="club_street_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="120" parent="9" name="club_phone">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="121" parent="9" name="club_fax">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="122" parent="9" name="club_mail">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="123" parent="9" name="club_site">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="124" parent="9" name="city_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="125" parent="9" name="organization_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="126" parent="9" name="club_logo">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="127" parent="9" name="club_pageinfo">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <index id="128" parent="9" name="city_code">
+        <columns>city_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="129" parent="9" name="club_name">
+        <columns>club_name</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="130" parent="9" name="club_name_en">
+        <columns>club_name_en</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="131" parent="9" name="club_name_ua">
+        <columns>club_name_ua</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="132" parent="9" name="PRIMARY">
+        <columns>club_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="133" parent="10" name="coach_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="134" parent="10" name="coach_firstname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="135" parent="10" name="coach_lastname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="136" parent="10" name="coach_firstname_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="137" parent="10" name="coach_lastname_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="138" parent="10" name="coach_birth">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+        <default-expression>&apos;0000-00-00&apos;</default-expression>
+      </column>
+      <column id="139" parent="10" name="coach_index">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="140" parent="10" name="coach_street">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="141" parent="10" name="coach_house">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="142" parent="10" name="coach_flat">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="143" parent="10" name="coach_phone">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="144" parent="10" name="coach_ceilphone">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="145" parent="10" name="coach_mail">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="146" parent="10" name="cat_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="147" parent="10" name="club_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="148" parent="10" name="coach_onclubpage">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="149" parent="10" name="coach_card">
+        <mandatory>1</mandatory>
+        <data-type>varchar(13)</data-type>
+      </column>
+      <column id="150" parent="10" name="organization_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="151" parent="10" name="cat_code">
+        <columns>cat_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="152" parent="10" name="coach_firstname">
+        <columns>coach_firstname</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="153" parent="10" name="coach_firstname_en">
+        <columns>coach_firstname_en</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="154" parent="10" name="coach_lastname">
+        <columns>coach_lastname</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="155" parent="10" name="coach_lastname_en">
+        <columns>coach_lastname_en</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="156" parent="10" name="PRIMARY">
+        <columns>coach_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="157" parent="11" name="cat_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="158" parent="11" name="cat_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="159" parent="11" name="cat_name_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="160" parent="11" name="cat_name_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="161" parent="11" name="cat_pos">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="162" parent="11" name="PRIMARY">
+        <columns>cat_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="163" parent="12" name="country_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="164" parent="12" name="country_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="165" parent="12" name="country_name_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="166" parent="12" name="country_name_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+      </column>
+      <column id="167" parent="12" name="country_flag">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <index id="168" parent="12" name="country_name">
+        <columns>country_name</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="169" parent="12" name="country_name_ua">
+        <columns>country_name_ua</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="170" parent="12" name="PRIMARY">
+        <columns>country_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="171" parent="13" name="dancer_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="172" parent="13" name="dancer_firstname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="173" parent="13" name="dancer_lastname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="174" parent="13" name="dancer_firstname_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="175" parent="13" name="dancer_lastname_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="176" parent="13" name="dancer_birth">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+        <default-expression>&apos;0000-00-00&apos;</default-expression>
+      </column>
+      <column id="177" parent="13" name="dancer_sex">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="178" parent="13" name="dancer_index">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="179" parent="13" name="dancer_street">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="180" parent="13" name="dancer_house">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="181" parent="13" name="dancer_flat">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="182" parent="13" name="dancer_phone">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="183" parent="13" name="dancer_mail">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="184" parent="13" name="dancer_book">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="185" parent="13" name="class_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="186" parent="13" name="club_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="187" parent="13" name="organization_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="188" parent="13" name="dancer_lanum">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="189" parent="13" name="dancer_stnum">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="190" parent="13" name="dancer_inpair">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="191" parent="13" name="dancer_confirm">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="192" parent="13" name="class_st_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="193" parent="13" name="class_la_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="194" parent="13" name="class_date">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="195" parent="13" name="class_la_date">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="196" parent="13" name="class_st_date">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="197" parent="13" name="dancer_card">
+        <mandatory>1</mandatory>
+        <data-type>varchar(13)</data-type>
+      </column>
+      <column id="198" parent="13" name="dancer_login">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="199" parent="13" name="dancer_password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="200" parent="13" name="dancer_photo">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="201" parent="13" name="dancer_newreg">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="202" parent="13" name="country_code">
+        <mandatory>1</mandatory>
+        <data-type>int(3)</data-type>
+      </column>
+      <column id="203" parent="13" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(2)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="204" parent="13" name="main_code">
+        <mandatory>1</mandatory>
+        <data-type>int(2)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="205" parent="13" name="club_code">
+        <columns>club_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="206" parent="13" name="dancer_confirm">
+        <columns>dancer_confirm</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="207" parent="13" name="dancer_firstname">
+        <columns>dancer_firstname</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="208" parent="13" name="dancer_firstname_en">
+        <columns>dancer_firstname_en</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="209" parent="13" name="dancer_lastname">
+        <columns>dancer_lastname</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="210" parent="13" name="dancer_lastname_en">
+        <columns>dancer_lastname_en</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="211" parent="13" name="dancer_newreg">
+        <columns>dancer_newreg</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="212" parent="13" name="organization_code">
+        <columns>organization_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="213" parent="13" name="PRIMARY">
+        <columns>dancer_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="214" parent="14" name="payment_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="215" parent="14" name="dancer_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="216" parent="14" name="year_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="217" parent="14" name="payment_size">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="218" parent="14" name="payment_active">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="219" parent="14" name="user_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="220" parent="14" name="dancer_code">
+        <columns>dancer_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="221" parent="14" name="year_code">
+        <columns>year_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="222" parent="14" name="PRIMARY">
+        <columns>payment_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="223" parent="15" name="lang_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="224" parent="15" name="lang_name">
+        <data-type>varchar(250)</data-type>
+      </column>
+      <column id="225" parent="15" name="lang_name_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="226" parent="15" name="lang_name_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="227" parent="15" name="lang_pos">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="228" parent="15" name="PRIMARY">
+        <columns>lang_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="229" parent="16" name="pair_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="230" parent="16" name="man_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="231" parent="16" name="woman_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="232" parent="16" name="pair_statrdate">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+        <default-expression>&apos;0000-00-00&apos;</default-expression>
+      </column>
+      <column id="233" parent="16" name="pair_enddate">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+        <default-expression>&apos;0000-00-00&apos;</default-expression>
+      </column>
+      <column id="234" parent="16" name="pair_active">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="235" parent="16" name="club_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="236" parent="16" name="pair_hide">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="237" parent="16" name="pair_startrating">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="238" parent="16" name="club_code">
+        <columns>club_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="239" parent="16" name="man_code">
+        <columns>man_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="240" parent="16" name="woman_code">
+        <columns>woman_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="241" parent="16" name="PRIMARY">
+        <columns>pair_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="242" parent="17" name="pair_coach_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="243" parent="17" name="pair_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="244" parent="17" name="coach_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="245" parent="17" name="pair_coach_startdate">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+        <default-expression>&apos;0000-00-00&apos;</default-expression>
+      </column>
+      <column id="246" parent="17" name="pair_coach_enddate">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+        <default-expression>&apos;0000-00-00&apos;</default-expression>
+      </column>
+      <column id="247" parent="17" name="pair_coach_active">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="248" parent="17" name="PRIMARY">
+        <columns>pair_coach_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="249" parent="18" name="program_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="250" parent="18" name="program_name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="251" parent="18" name="program_name_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="252" parent="18" name="program_name_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="253" parent="18" name="program_pref">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+      </column>
+      <key id="254" parent="18" name="PRIMARY">
+        <columns>program_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="255" parent="19" name="prog_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="256" parent="19" name="tournament_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="257" parent="19" name="category_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="258" parent="19" name="class_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="259" parent="19" name="program_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="260" parent="19" name="prog_price">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="261" parent="19" name="prog_pos">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="262" parent="19" name="prog_classcontrol">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="263" parent="19" name="prog_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="264" parent="19" name="prog_name_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="265" parent="19" name="prog_name_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="266" parent="19" name="prog_rang">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="267" parent="19" name="prog_factor">
+        <mandatory>1</mandatory>
+        <data-type>float(9,2)</data-type>
+        <default-expression>&apos;1.00&apos;</default-expression>
+      </column>
+      <column id="268" parent="19" name="prog_day">
+        <mandatory>1</mandatory>
+        <data-type>int(2)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="269" parent="19" name="prog_part">
+        <mandatory>1</mandatory>
+        <data-type>varchar(5)</data-type>
+      </column>
+      <index id="270" parent="19" name="category_code">
+        <columns>category_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="271" parent="19" name="prog_day">
+        <columns>prog_day</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="272" parent="19" name="prog_part">
+        <columns>prog_part</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="273" parent="19" name="tournament_code">
+        <columns>tournament_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="274" parent="19" name="PRIMARY">
+        <columns>prog_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="275" parent="20" name="request_code">
+        <mandatory>1</mandatory>
+        <data-type>bigint(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="276" parent="20" name="tournament_code">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="277" parent="20" name="tournamentprog_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="278" parent="20" name="pair_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="279" parent="20" name="request_active">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="280" parent="20" name="request_num">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="281" parent="20" name="request_hide">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="282" parent="20" name="request_resplace">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="283" parent="20" name="request_endtour">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="284" parent="20" name="request_payed">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="285" parent="20" name="man_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="286" parent="20" name="woman_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="287" parent="20" name="uid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="288" parent="20" name="man_code">
+        <columns>man_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="289" parent="20" name="pair_code">
+        <columns>pair_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="290" parent="20" name="tournamentprog_code">
+        <columns>tournamentprog_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="291" parent="20" name="tournament_code">
+        <columns>tournament_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="292" parent="20" name="woman_code">
+        <columns>woman_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="293" parent="20" name="PRIMARY">
+        <columns>request_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="294" parent="21" name="tournament_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="295" parent="21" name="tournament_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="296" parent="21" name="tournament_name_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="297" parent="21" name="tournament_name_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="298" parent="21" name="tournament_city">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="299" parent="21" name="tournament_city_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="300" parent="21" name="tournament_city_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="301" parent="21" name="tournament_owner">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="302" parent="21" name="tournament_owner_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="303" parent="21" name="tournament_owner_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="304" parent="21" name="tournament_desc">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="305" parent="21" name="tournament_date">
+        <data-type>date</data-type>
+      </column>
+      <column id="306" parent="21" name="tournament_enddate">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+        <default-expression>&apos;0000-00-00&apos;</default-expression>
+      </column>
+      <column id="307" parent="21" name="tournament_regdate">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+        <default-expression>&apos;0000-00-00&apos;</default-expression>
+      </column>
+      <column id="308" parent="21" name="tournament_active">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="309" parent="21" name="tournament_invite">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="310" parent="21" name="tournament_scrutiner">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="311" parent="21" name="tournament_translit">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="312" parent="21" name="tournament_reglink">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="313" parent="21" name="organization_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="314" parent="21" name="tournament_ready">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="315" parent="21" name="tournament_resfile">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="316" parent="21" name="tournament_level">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="317" parent="21" name="tournament_eng">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="318" parent="21" name="tournament_rating_k">
+        <mandatory>1</mandatory>
+        <data-type>float(9,2)</data-type>
+        <default-expression>&apos;1.00&apos;</default-expression>
+      </column>
+      <column id="319" parent="21" name="tournament_region">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="320" parent="21" name="tournament_tm_tour">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="321" parent="21" name="tournament_idsfdate">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="322" parent="21" name="tournament_place">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="323" parent="21" name="tournament_place_en">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="324" parent="21" name="tournament_place_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="325" parent="21" name="tournament_address">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="326" parent="21" name="tournament_address_en">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="327" parent="21" name="tournament_address_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="328" parent="21" name="tournament_primary">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="329" parent="21" name="tournament_alias">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="330" parent="21" name="tournament_dancerticket">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="331" parent="21" name="tournament_tickets">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="332" parent="21" name="tournament_ticketscode">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="333" parent="21" name="tournament_ticketstoall">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="334" parent="21" name="tournament_short_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="335" parent="21" name="tournament_short_name_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="336" parent="21" name="tournament_short_name_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="337" parent="21" name="tournament_visible">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="338" parent="21" name="tournament_regtype">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="339" parent="21" name="tournament_date">
+        <columns>tournament_date</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="340" parent="21" name="tournament_enddate">
+        <columns>tournament_enddate</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="341" parent="21" name="PRIMARY">
+        <columns>tournament_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="342" parent="22" name="tour_code">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="343" parent="22" name="tour_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="344" parent="22" name="tour_name_en">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="345" parent="22" name="tour_name_ua">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="346" parent="22" name="tour_pos">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="347" parent="22" name="tour_t">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="348" parent="22" name="PRIMARY">
+        <columns>tour_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="349" parent="23" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="350" parent="23" name="username">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="351" parent="23" name="auth_key">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="352" parent="23" name="password_hash">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="353" parent="23" name="password_reset_token">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="354" parent="23" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="355" parent="23" name="status">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;10&apos;</default-expression>
+      </column>
+      <column id="356" parent="23" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="357" parent="23" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="358" parent="23" name="email">
+        <columns>email</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="359" parent="23" name="password_reset_token">
+        <columns>password_reset_token</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="360" parent="23" name="username">
+        <columns>username</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="361" parent="23" name="email">
+        <columns>email</columns>
+        <underlying-index>email</underlying-index>
+      </key>
+      <key id="362" parent="23" name="password_reset_token">
+        <columns>password_reset_token</columns>
+        <underlying-index>password_reset_token</underlying-index>
+      </key>
+      <key id="363" parent="23" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="364" parent="23" name="username">
+        <columns>username</columns>
+        <underlying-index>username</underlying-index>
+      </key>
+    </database-model>
+  </data-source>
+</component>

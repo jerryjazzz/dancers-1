@@ -24,6 +24,7 @@ function logic()
     $class = new $className();
     $views = $class->$actionName();
     $data = $class->data;
+    $data['controller'] = $class;
     render($views);
     return true;
 }

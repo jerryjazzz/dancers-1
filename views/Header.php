@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="<?= $url->BASE_URL ?>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= $url->BASE_URL ?>/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="<?= $url->BASE_URL ?>/css/css.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="<?= $url->BASE_URL ?>/js/bootstrap.min.js"></script>

@@ -125,3 +125,25 @@ table td{
     float:right;
     margin:20px 0;
 }
+
+.radio input{
+    height:25px;
+    width:25px;
+    margin-left:-30px !important;
+    margin-top:0px;
+}
+.radio label{
+    height: 30px;
+    vertical-align: middle;
+    padding-left:30px;
+}
+
+.filter{
+    background:#fff;
+}
+.filter th{
+    padding:10px;
+}
+.selectpicker{
+    display:none;
+}

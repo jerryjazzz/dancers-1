@@ -4,7 +4,7 @@ head();
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Страна</h1>
+                <h1>Создание Города</h1>
                 <form method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="name1">Имя:</label>

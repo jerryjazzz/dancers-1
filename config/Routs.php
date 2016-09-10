@@ -41,6 +41,22 @@ class Routs
                             'create' => "create",
                         ]
                 ],
+                'pairs' => [
+                    'controller' => 'PairsController',
+                    'actions' =>
+                        [
+                            'views' => "index",
+                            'create' => "create",
+                        ]
+                ],
+                'paircoach' => [
+                    'controller' => 'PairsCoachController',
+                    'actions' =>
+                        [
+                            'views' => "index",
+                            'create' => "create",
+                        ]
+                ],
                 '' => [
                     'controller' => 'HomeController',
                     'actions' =>

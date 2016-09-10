@@ -27,11 +27,17 @@ class DancersController extends Controllers
     function edit()
     {
         if (isset($_POST['edit'])) {
+            $_POST['dancer_birth'] = date( 'Y-m-d H:i:s', strtotime($_POST['dancer_birth']) );
+            $class = $this->model->getClass($_POST['class_code']);
+            $_POST['class_st_code'] = 1;
+            $_POST['class_la_code'] = 1;
             $this->model->update();
             echo "<script>window.history.go(-2);</script>";
         }
-
         $this->data['dancers'] = $this->model->ret_one_dancers();
+        $date = $this->data['dancers']['dancer_birth'];
+        $phpdate = strtotime($date);
+        $this->data['dancers']['dancer_birth'] = date('d-m-Y',$phpdate);
         $this->data['title'] = "Танцор";
         $this->data['desc'] = "";
         $this->data['key'] = "";
@@ -40,6 +46,10 @@ class DancersController extends Controllers
     function create()
     {
         if (isset($_POST['add'])) {
+            $_POST['dancer_birth'] = date( 'Y-m-d H:i:s', strtotime($_POST['dancer_birth']) );
+            $class = $this->model->getClass($_POST['class_code']);
+            $_POST['class_st_code'] = 1;
+            $_POST['class_la_code'] = 1;
             $this->model->add();
             echo "<script>window.history.go(-2);</script>";
         }
